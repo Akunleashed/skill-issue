@@ -1,12 +1,89 @@
-# React + Vite
+# Tic Tac Toe Game Room
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An offline, two-player Tic Tac Toe game built with React and Tailwind CSS. Players can enter their names, view unique avatars, and enjoy the game in the browser.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+This app lets two players join a game room, see their avatars, and play Tic Tac Toe together. The game uses React Context API for state management and fetches unique avatars from the DiceBear API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **React**
+- **React Router**
+- **React Context API**
+- **Tailwind CSS**
+- **DiceBear Avatars API**
+
+---
+
+## Features
+
+- **Three Pages:**  
+  - Login (enter player names)  
+  - Lobby (see avatars and player info)  
+  - Game Board (play Tic Tac Toe)
+- **Offline Multiplayer:** Play locally with two players on the same device.
+- **Unique Avatars:** Player avatars.
+- **Winner Detection:** Highlights the winner and allows instant replay.
+- **Responsive Design:** Looks great on desktop and mobile.
+
+---
+
+## Setup
+
+### Installation
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/jenyyy4/PixieCycle.git
+
+2. **Navigate to the Project Directory**:
+
+   ```bash
+   cd PixieCycle
+
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+
+4. **Start the Application**:
+
+   ```bash
+   npm run dev
+
+### Tailwind CSS Setup
+
+1. **Install Tailwind**:
+
+   ```bash
+   npm install tailwindcss @tailwindcss/vite
+
+2. **Edit vite.config.js**:
+
+   ```
+    import { defineConfig } from 'vite'
+    import tailwindcss from '@tailwindcss/vite' // added line
+    export default defineConfig({
+      plugins: [
+        tailwindcss(), // added line
+      ],
+    })
+   ```
+   
+3. **Add to index.css**:
+
+   ```
+   @import "tailwindcss";
+   ```
+
+4. **Start the Application**:
+
+   ```
+   npm run dev
+   ```
