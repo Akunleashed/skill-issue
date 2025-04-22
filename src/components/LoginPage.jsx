@@ -6,7 +6,7 @@ export default function LoginPage() {
   const navigate = useNavigate();
   const { setPlayers } = useGame();
   const [player1, setPlayer1] = useState('');
-  const [player2, setPlayer2] = useState('Player 2');
+  const [player2, setPlayer2] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
